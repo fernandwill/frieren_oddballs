@@ -1,0 +1,42 @@
+* {
+  color:purple;
+}
+
+div {
+  color: white;
+  background-color: green;
+}
+
+p {
+  display: block;
+  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+.alert-text {
+  color:red;
+}
+
+.subsection.header {
+  color:red;
+}
+
+.subsection#preview {
+  color:green;
+}
+
+img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.main .list {
+  color: blue;
+}
+
+#parent {
+  color: purple;
+}
+
+.child {
+  color: blue;
+}
