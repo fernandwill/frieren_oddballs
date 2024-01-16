@@ -1,42 +1,58 @@
 * {
-  color:purple;
+  margin:0px;
+  padding:0px;
+  font-family: 'Cabin', sans-serif;
 }
 
-div {
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+nav img {
+  width: 100px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
   color: white;
-  background-color: green;
+  text-decoration: none;
+  font-size: 13px;
 }
 
-p {
+.nav-links ul li::after {
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: grey;
   display: block;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  margin: auto;
+  transition: 0.2s;
 }
 
-.alert-text {
-  color:red;
+.nav-links ul li:hover::after {
+  width: 100%;
 }
 
-.subsection.header {
-  color:red;
-}
-
-.subsection#preview {
-  color:green;
-}
-
-img {
-  width: auto;
-  margin: 0 auto;
-}
-
-.main .list {
-  color: blue;
-}
-
-#parent {
-  color: purple;
-}
-
-.child {
-  color: blue;
-}
